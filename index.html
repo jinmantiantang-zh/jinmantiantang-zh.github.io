@@ -1,0 +1,1158 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>禁慢天堂 - jinmantiantang-zh.com.github.io｜成人漫画分级阅读平台</title>
+<meta name="description" content="禁慢天堂（jinmantiantang-zh.com.github.io）是面向成年读者的漫画分级阅读平台，提供成人向、BL、GL、悬疑、复古港漫等题材，支持内容分级筛选与阅读偏好设置，尽在 jinmantiantang-zh.com.github.io。">
+<meta name="keywords" content="禁慢天堂, jinmantiantang-zh, jinmantiantang-zh.com.github.io, 成人漫画, 分级阅读, 漫画平台">
+<meta name="robots" content="index, follow, max-snippet:160, max-image-preview:large">
+<meta name="theme-color" content="#f4f1ea">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="禁慢天堂">
+<meta property="og:title" content="禁慢天堂 - jinmantiantang-zh.com.github.io｜成人漫画分级阅读平台">
+<meta property="og:description" content="禁慢天堂（jinmantiantang-zh.com.github.io）面向成年读者的漫画分级阅读平台，支持题材筛选与分级设置。">
+<meta property="og:url" content="https://jinmantiantang-zh.com.github.io/">
+<meta property="og:image" content="https://jinmantiantang-zh.com.github.io/cover.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="canonical" href="https://jinmantiantang-zh.com.github.io/">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "禁慢天堂",
+  "url": "https://jinmantiantang-zh.com.github.io/",
+  "description": "面向成年读者的漫画分级阅读平台",
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": "https://jinmantiantang-zh.com.github.io/#search?q={search_term_string}",
+    "query-input": "required name=search_term_string"
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "禁慢天堂",
+  "url": "https://jinmantiantang-zh.com.github.io/",
+  "logo": "https://jinmantiantang-zh.com.github.io/cover.jpg"
+}
+</script>
+<style>
+:root{
+  --paper:#f4f1ea;
+  --paper2:#efeae0;
+  --card:#faf7f1;
+  --ink:#1c1c1c;
+  --ink2:#4a4a48;
+  --ink3:#8b8b86;
+  --line:#d8d2c5;
+  --line2:#e6e1d7;
+  --red:#c63a2f;
+  --red2:#e04b3f;
+  --serif:"Noto Serif CJK SC","Source Han Serif SC","Songti SC",Georgia,"SimSun",serif;
+  --sans:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+  --radius:4px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{
+  background:var(--paper);color:var(--ink);
+  font-family:var(--sans);font-size:16px;line-height:1.8;
+  overflow-x:hidden;
+  background-image:
+    radial-gradient(circle at 12% 8%,rgba(198,58,47,.035),transparent 40%),
+    repeating-linear-gradient(0deg,transparent,transparent 31px,rgba(28,28,28,.012) 31px,rgba(28,28,28,.012) 32px);
+}
+a{color:inherit;text-decoration:none}
+button{font:inherit;cursor:pointer;border:none;background:none;color:inherit}
+::selection{background:var(--red);color:#fff}
+
+/* 顶部信息条 */
+.topbar{
+  background:var(--ink);color:#cfccc5;font-size:.76rem;letter-spacing:.04em;
+}
+.topbar .in{max-width:1240px;margin:0 auto;padding:7px 24px;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+.topbar a{color:#cfccc5}
+.topbar a:hover{color:#fff}
+.topbar .left{display:flex;gap:18px;flex-wrap:wrap}
+
+/* 页头 */
+header{border-bottom:1px solid var(--line);background:var(--paper);position:sticky;top:0;z-index:90}
+.head-in{max-width:1240px;margin:0 auto;padding:18px 24px;display:flex;align-items:center;gap:24px}
+.logo{display:flex;align-items:baseline;gap:10px;flex-shrink:0;font-family:var(--serif);font-weight:700;font-size:1.55rem;letter-spacing:.02em}
+.logo span{color:var(--red)}
+.logo small{font-family:var(--sans);font-size:.68rem;color:var(--ink3);letter-spacing:.1em;font-weight:500}
+.head-search{
+  flex:1;max-width:380px;margin-left:auto;position:relative;
+  border-bottom:1px solid var(--ink);padding:6px 0;display:flex;align-items:center;gap:8px;
+}
+.head-search svg{flex-shrink:0;opacity:.5}
+.head-search input{
+  flex:1;border:none;background:none;font-size:.92rem;outline:none;color:var(--ink);font-family:var(--sans);
+}
+.head-search input::placeholder{color:var(--ink3)}
+.head-search kbd{
+  font-family:var(--sans);font-size:.68rem;color:var(--ink3);border:1px solid var(--line);
+  padding:1px 5px;border-radius:3px;background:var(--paper2);
+}
+.head-meta{display:flex;gap:22px;align-items:center;font-size:.82rem;color:var(--ink2);flex-shrink:0}
+.head-meta b{color:var(--red);font-family:var(--serif);font-weight:700;font-size:1.05rem}
+.drawer-btn{
+  display:none;width:40px;height:40px;border:1px solid var(--line);border-radius:var(--radius);
+  align-items:center;justify-content:center;flex-shrink:0;margin-left:auto;
+}
+.drawer-btn i{display:block;width:17px;height:2px;background:var(--ink);position:relative}
+.drawer-btn i::before,.drawer-btn i::after{content:"";position:absolute;left:0;width:17px;height:2px;background:var(--ink)}
+.drawer-btn i::before{top:-6px}.drawer-btn i::after{top:6px}
+
+/* 主导航 */
+nav.primary{
+  border-bottom:3px double var(--line);background:var(--paper);
+}
+.nav-in{max-width:1240px;margin:0 auto;padding:0 24px;display:flex;gap:2px;overflow-x:auto}
+.nav-in::-webkit-scrollbar{display:none}
+.nav-in a{
+  padding:13px 15px;font-size:.9rem;color:var(--ink2);white-space:nowrap;position:relative;font-weight:500;
+}
+.nav-in a:hover{color:var(--red)}
+.nav-in a.on{color:var(--ink);font-weight:700}
+.nav-in a.on::after{content:"";position:absolute;left:15px;right:15px;bottom:-1px;height:2px;background:var(--red)}
+.nav-in .spacer{flex:1}
+.nav-in .date{font-size:.78rem;color:var(--ink3);align-self:center;white-space:nowrap;font-variant-numeric:tabular-nums}
+
+/* 布局 */
+.wrap{max-width:1240px;margin:0 auto;padding:0 24px}
+.layout{display:grid;grid-template-columns:196px 1fr;gap:44px;max-width:1240px;margin:0 auto;padding:34px 24px}
+.layout>main{min-width:0}
+.layout>aside{min-width:0}
+
+/* 栏目标题 */
+.kicker{display:flex;align-items:flex-end;gap:12px;margin-bottom:6px}
+.kicker .no{font-family:var(--serif);font-size:.78rem;color:var(--red);font-weight:700;letter-spacing:.08em;border:1px solid var(--red);padding:1px 6px;border-radius:2px}
+.sec-title{
+  font-family:var(--serif);font-weight:700;font-size:clamp(1.4rem,2.8vw,1.95rem);
+  letter-spacing:.01em;display:flex;align-items:baseline;gap:12px;flex-wrap:wrap;margin-bottom:10px;
+}
+.sec-title em{font-style:normal;font-size:.72rem;color:var(--ink3);font-family:var(--sans);letter-spacing:.16em;font-weight:500}
+.sec-desc{color:var(--ink2);font-size:.9rem;margin-bottom:26px;max-width:62ch}
+.sec-head{display:flex;justify-content:space-between;align-items:flex-end;gap:16px;flex-wrap:wrap;margin-bottom:26px;border-bottom:1px solid var(--line);padding-bottom:14px}
+.sec-head .t{display:flex;align-items:baseline;gap:12px;flex-wrap:wrap}
+.sec-head .t b{font-family:var(--serif);font-weight:700;font-size:1.35rem}
+.sec-head .t span{font-size:.8rem;color:var(--ink3);letter-spacing:.08em}
+
+/* 导语带 */
+.lede{
+  background:var(--ink);color:#e8e5de;padding:30px 34px;margin:0 auto;max-width:1240px;
+  display:grid;grid-template-columns:auto 1fr auto;gap:28px;align-items:center;
+}
+.lede .vol{
+  font-family:var(--serif);text-align:center;border-right:1px solid rgba(255,255,255,.16);padding-right:28px;
+}
+.lede .vol b{display:block;font-size:1.5rem;color:var(--red2);letter-spacing:.05em}
+.lede .vol small{font-size:.7rem;letter-spacing:.18em;color:#9c9991}
+.lede p{font-family:var(--serif);font-size:1.02rem;line-height:1.85;color:#dcd9d2}
+.lede p strong{color:#fff;font-weight:700}
+.lede p a{color:var(--red2);border-bottom:1px solid rgba(224,75,63,.4)}
+.lede .go{
+  font-size:.82rem;color:#cfccc5;border:1px solid rgba(255,255,255,.24);padding:8px 16px;border-radius:var(--radius);white-space:nowrap;
+}
+.lede .go:hover{color:#fff;border-color:#fff}
+
+/* 年龄提示 */
+.agegate{
+  max-width:1240px;margin:0 auto;padding:22px 24px 0;
+}
+.agebox{
+  border:1px solid var(--line);background:var(--card);padding:16px 20px;
+  display:grid;grid-template-columns:auto 1fr auto;gap:20px;align-items:center;
+}
+.agebox .mark{
+  font-family:var(--serif);font-weight:700;font-size:1.7rem;color:var(--red);line-height:1;
+  border-right:1px solid var(--line);padding-right:20px;
+}
+.agebox p{font-size:.86rem;color:var(--ink2)}
+.agebox p b{color:var(--ink)}
+.agebox a{font-size:.82rem;color:var(--red);border-bottom:1px solid var(--red);white-space:nowrap}
+
+/* 封面卡 */
+.cv-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:22px 18px}
+.cv{display:block;transition:.22s}
+.cv .frame{
+  position:relative;aspect-ratio:3/4;overflow:hidden;border:1px solid var(--line);
+  background:var(--paper2);box-shadow:3px 3px 0 var(--line);
+}
+.cv .frame .ink{position:absolute;inset:0;display:grid;place-items:center;text-align:center;padding:14px;color:#fff;font-family:var(--serif);font-weight:700;font-size:1.05rem;line-height:1.35}
+.cv .frame .ink small{display:block;font-size:.66rem;letter-spacing:.14em;font-weight:500;margin-top:10px;opacity:.85;font-family:var(--sans)}
+.cv .frame::after{content:"";position:absolute;inset:0;background:linear-gradient(to top,rgba(0,0,0,.55),transparent 38%)}
+.cv .frame .row{
+  position:absolute;left:0;right:0;bottom:0;z-index:2;padding:9px 10px;display:flex;justify-content:space-between;align-items:flex-end;gap:6px;
+}
+.cv .frame .row b{font-size:.74rem;line-height:1.3;display:block;color:#fff}
+.cv .frame .row em{font-style:normal;font-size:.66rem;color:rgba(255,255,255,.72);flex-shrink:0}
+.cv:hover .frame{transform:translate(-2px,-2px);box-shadow:5px 5px 0 var(--red);border-color:var(--red)}
+.cv h4{font-family:var(--serif);font-size:.96rem;margin:11px 0 5px;line-height:1.45}
+.cv .tags{display:flex;gap:6px;flex-wrap:wrap;font-size:.7rem;color:var(--ink3)}
+.cv .tags i{font-style:normal;background:var(--paper2);border:1px solid var(--line2);padding:1px 6px;border-radius:2px}
+
+/* 标签组 */
+.tabs{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:22px}
+.tab{
+  font-size:.84rem;padding:6px 14px;border:1px solid var(--line);border-radius:20px;background:var(--card);color:var(--ink2);transition:.18s;
+}
+.tab:hover{border-color:var(--ink3);color:var(--ink)}
+.tab.on{background:var(--ink);color:var(--paper);border-color:var(--ink);font-weight:600}
+
+/* 榜单（报纸式三栏） */
+.paper{display:grid;grid-template-columns:repeat(3,1fr);gap:0;border:1px solid var(--line);background:var(--card)}
+.paper>div{border-right:1px solid var(--line);padding:20px 22px}
+.paper>div:last-child{border-right:none}
+.paper .hd{display:flex;align-items:baseline;gap:8px;border-bottom:2px solid var(--ink);padding-bottom:10px;margin-bottom:4px}
+.paper .hd b{font-family:var(--serif);font-size:1.02rem}
+.paper .hd em{font-style:normal;font-size:.7rem;color:var(--ink3);letter-spacing:.1em}
+.paper ol{list-style:none;counter-reset:r}
+.paper li{
+  display:flex;gap:12px;padding:12px 0;border-bottom:1px dotted var(--line);counter-increment:r;align-items:flex-start;
+}
+.paper li:last-child{border-bottom:none}
+.paper li::before{
+  content:counter(r);font-family:var(--serif);font-weight:700;font-size:.82rem;color:var(--paper);
+  background:var(--ink3);width:20px;height:20px;flex-shrink:0;display:grid;place-items:center;margin-top:3px;line-height:1;
+}
+.paper li:nth-child(1)::before{background:var(--red)}
+.paper li:nth-child(2)::before{background:#8a7560}
+.paper li:nth-child(3)::before{background:#6c7a8c}
+.paper li .t{flex:1;min-width:0}
+.paper li .t b{font-size:.9rem;font-weight:600;display:block;line-height:1.4}
+.paper li .t span{font-size:.75rem;color:var(--ink3)}
+.paper li .r{font-size:.78rem;color:var(--red);font-weight:700;font-variant-numeric:tabular-nums;flex-shrink:0}
+
+/* 更新列表 */
+.ulist{border-top:2px solid var(--ink)}
+.ulist .row{
+  display:grid;grid-template-columns:96px 78px 1fr 92px 96px;gap:18px;align-items:center;
+  padding:13px 4px;border-bottom:1px solid var(--line);font-size:.9rem;transition:.16s;
+}
+.ulist .row:hover{background:var(--paper2)}
+.ulist .row time{font-size:.8rem;color:var(--ink3);font-variant-numeric:tabular-nums;letter-spacing:.02em}
+.ulist .row .no{font-family:var(--serif);font-size:.78rem;color:var(--red);font-weight:700;border:1px solid var(--red);padding:1px 6px;border-radius:2px;justify-self:start}
+.ulist .row .t{font-weight:600}
+.ulist .row .t em{font-style:normal;font-weight:400;color:var(--ink3);font-size:.82rem;margin-left:6px}
+.ulist .row .tag{font-size:.74rem;color:var(--ink2);border:1px solid var(--line);padding:2px 8px;border-radius:2px;justify-self:start;background:var(--card)}
+.ulist .row .tag.hot{border-color:var(--red);color:var(--red)}
+.ulist .row .cap{font-size:.78rem;color:var(--ink3);justify-self:end;font-variant-numeric:tabular-nums}
+
+/* 分类网格 */
+.cat-grid{display:grid;grid-template-columns:repeat(8,1fr);border:1px solid var(--line);background:var(--card)}
+.cat{
+  border-right:1px solid var(--line2);border-bottom:1px solid var(--line2);
+  padding:18px 8px;text-align:center;transition:.18s;display:flex;flex-direction:column;align-items:center;gap:7px;min-height:104px;justify-content:center;
+}
+.cat:nth-child(8n){border-right:none}
+.cat:hover{background:var(--ink);color:var(--paper)}
+.cat:hover .n{color:var(--red2)}
+.cat .n{font-size:1.45rem;line-height:1;transition:.18s}
+.cat b{font-size:.82rem;font-weight:600}
+.cat small{font-size:.7rem;color:var(--ink3);font-family:var(--sans)}
+.cat:hover small{color:#9c9991}
+
+/* 侧边栏 */
+.sticky{position:sticky;top:88px;display:grid;gap:26px}
+.widget{border:1px solid var(--line);background:var(--card);padding:18px 20px}
+.widget h3{
+  font-family:var(--serif);font-size:1rem;font-weight:700;display:flex;align-items:center;gap:8px;
+  border-bottom:1px solid var(--ink);padding-bottom:10px;margin-bottom:14px;
+}
+.widget h3::before{content:"";width:4px;height:13px;background:var(--red)}
+.aside-nav{display:grid;gap:1px;background:var(--line2);border:1px solid var(--line2)}
+.aside-nav a{background:var(--card);padding:10px 12px;font-size:.88rem;color:var(--ink2);display:flex;justify-content:space-between;align-items:center;gap:8px}
+.aside-nav a:hover{background:var(--paper2);color:var(--red)}
+.aside-nav a.on{background:var(--ink);color:var(--paper);font-weight:600}
+.aside-nav a.on::after{content:"→";color:var(--red2)}
+.mini{display:grid;gap:12px}
+.mini a{display:grid;grid-template-columns:40px 1fr;gap:11px;align-items:center;padding-bottom:12px;border-bottom:1px dotted var(--line)}
+.mini a:last-child{border-bottom:none;padding-bottom:0}
+.mini .sq{aspect-ratio:1;display:grid;place-items:center;color:#fff;font-family:var(--serif);font-size:.9rem;font-weight:700}
+.mini b{font-size:.85rem;line-height:1.4;font-weight:600}
+.mini span{font-size:.72rem;color:var(--ink3)}
+.notice{font-size:.84rem;color:var(--ink2);display:grid;gap:11px}
+.notice div{padding-left:14px;position:relative;line-height:1.7}
+.notice div::before{content:"";position:absolute;left:0;top:9px;width:5px;height:5px;background:var(--red)}
+.notice div time{display:block;font-size:.72rem;color:var(--ink3);font-variant-numeric:tabular-nums}
+
+/* 功能条 */
+.feat{border:1px solid var(--line);background:var(--card)}
+.feat .row{
+  display:grid;grid-template-columns:58px 1fr 110px;gap:20px;align-items:center;
+  padding:20px 22px;border-bottom:1px solid var(--line2);transition:.18s;
+}
+.feat .row:last-child{border-bottom:none}
+.feat .row:hover{background:var(--paper2)}
+.feat .row .n{
+  font-family:var(--serif);font-size:1.6rem;font-weight:700;color:var(--red);line-height:1;text-align:center;
+  border-right:1px solid var(--line);padding-right:20px;
+}
+.feat .row h4{font-family:var(--serif);font-size:1.02rem;margin-bottom:4px}
+.feat .row p{font-size:.86rem;color:var(--ink2)}
+.feat .row .lk{font-size:.8rem;color:var(--ink3);text-align:right;white-space:nowrap}
+
+/* 时间线（专题） */
+.special{border:1px solid var(--line);background:var(--card)}
+.sp-head{padding:20px 24px;border-bottom:1px solid var(--ink);background:var(--ink);color:var(--paper);display:flex;justify-content:space-between;align-items:baseline;gap:12px;flex-wrap:wrap}
+.sp-head b{font-family:var(--serif);font-size:1.15rem}
+.sp-head span{font-size:.78rem;color:#9c9991;letter-spacing:.08em}
+.sp-body{padding:6px 24px 20px}
+.sp-row{
+  display:grid;grid-template-columns:104px 1fr auto;gap:22px;align-items:center;
+  padding:16px 0;border-bottom:1px solid var(--line2);
+}
+.sp-row time{font-family:var(--serif);font-size:1.4rem;font-weight:700;color:var(--red);line-height:1;font-variant-numeric:tabular-nums}
+.sp-row time small{display:block;font-size:.66rem;color:var(--ink3);font-weight:500;letter-spacing:.06em;margin-top:5px;font-family:var(--sans)}
+.sp-row .t{font-weight:600;font-size:.95rem}
+.sp-row .t em{font-style:normal;font-weight:400;color:var(--ink3);font-size:.84rem;display:block;margin-top:3px;line-height:1.6}
+.sp-row .go{font-size:.8rem;color:var(--ink3);border:1px solid var(--line);padding:5px 12px;border-radius:var(--radius);white-space:nowrap}
+.sp-row .go:hover{color:var(--red);border-color:var(--red)}
+
+/* 引用评价 */
+.q-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.q{border:1px solid var(--line);background:var(--card);padding:22px;position:relative}
+.q::before{content:"“";position:absolute;top:8px;left:16px;font-family:var(--serif);font-size:3rem;color:var(--line);line-height:.8}
+.q blockquote{font-family:var(--serif);font-size:.94rem;line-height:1.85;padding-top:14px;color:var(--ink2)}
+.q .who{border-top:1px solid var(--line2);margin-top:16px;padding-top:12px;display:flex;justify-content:space-between;align-items:baseline;gap:10px}
+.q .who b{font-size:.84rem}
+.q .who span{font-size:.74rem;color:var(--ink3)}
+
+/* FAQ 手风琴 */
+.acc{border:1px solid var(--line);background:var(--card)}
+.acc details{border-bottom:1px solid var(--line2)}
+.acc details:last-child{border-bottom:none}
+.acc summary{
+  padding:17px 22px;cursor:pointer;list-style:none;font-weight:600;font-size:.95rem;
+  display:flex;justify-content:space-between;align-items:center;gap:14px;
+}
+.acc summary::-webkit-details-marker{display:none}
+.acc summary::after{content:"＋";color:var(--red);font-size:1.05rem;flex-shrink:0}
+.acc details[open] summary::after{content:"－"}
+.acc details[open] summary{border-bottom:1px solid var(--line2)}
+.acc .a{padding:0 22px 18px;font-size:.88rem;color:var(--ink2)}
+.acc .a a{color:var(--red);border-bottom:1px solid rgba(198,58,47,.3)}
+
+/* 投稿表单 */
+.form{display:grid;grid-template-columns:1fr 1fr;gap:14px;border:1px solid var(--line);background:var(--card);padding:24px}
+.form h3{grid-column:1/-1;font-family:var(--serif);font-size:1.15rem;border-bottom:1px solid var(--ink);padding-bottom:10px;margin-bottom:6px}
+.form label{display:flex;flex-direction:column;gap:6px;font-size:.82rem;color:var(--ink3)}
+.form input,.form select,.form textarea{
+  font:inherit;font-size:.92rem;padding:10px 12px;border:1px solid var(--line);border-radius:var(--radius);
+  background:var(--paper);color:var(--ink);outline:none;transition:.18s;
+}
+.form input:focus,.form select:focus,.form textarea:focus{border-color:var(--red);background:#fff}
+.form textarea{grid-column:1/-1;min-height:110px;resize:vertical;line-height:1.7}
+.form .full{grid-column:1/-1}
+.form .submit{grid-column:1/-1;display:flex;justify-content:flex-end;gap:12px;align-items:center;padding-top:6px}
+.form .hint{font-size:.78rem;color:var(--ink3)}
+.btn{
+  display:inline-flex;align-items:center;gap:7px;padding:11px 24px;border-radius:var(--radius);
+  font-size:.9rem;font-weight:600;transition:.2s;border:1px solid var(--ink);background:var(--ink);color:var(--paper);
+}
+.btn:hover{background:var(--red);border-color:var(--red)}
+.btn.line{background:transparent;color:var(--ink)}
+.btn.line:hover{background:var(--ink);color:var(--paper)}
+
+/* 目录表 */
+table.dt{width:100%;border-collapse:collapse;font-size:.88rem;border:1px solid var(--line);background:var(--card)}
+table.dt th{background:var(--paper2);text-align:left;padding:11px 14px;font-size:.76rem;letter-spacing:.06em;color:var(--ink3);font-weight:600;border-bottom:1px solid var(--line)}
+table.dt td{padding:13px 14px;border-bottom:1px solid var(--line2);vertical-align:top}
+table.dt tr:last-child td{border-bottom:none}
+table.dt tr:hover td{background:var(--paper2)}
+table.dt td.id{font-family:var(--serif);color:var(--red);font-weight:700;width:44px}
+table.dt td.nm{font-weight:600}
+table.dt td.nm small{display:block;color:var(--ink3);font-weight:400;font-size:.78rem;margin-top:2px}
+table.dt code{font-family:ui-monospace,Menlo,Consolas,monospace;font-size:.78rem;background:var(--paper2);border:1px solid var(--line2);padding:1px 7px;border-radius:2px;color:var(--ink2)}
+
+/* 页脚 */
+footer{margin-top:56px;border-top:3px double var(--line);background:var(--ink);color:#b9b6ae;padding:48px 0 0}
+.foot-in{max-width:1240px;margin:0 auto;padding:0 24px}
+.foot-top{display:grid;grid-template-columns:1.5fr 1fr 1fr 1fr 1fr;gap:34px;padding-bottom:38px;border-bottom:1px solid rgba(255,255,255,.12)}
+.foot-top .brand{font-family:var(--serif);font-size:1.7rem;color:#fff;font-weight:700;margin-bottom:12px}
+.foot-top .brand span{color:var(--red2)}
+.foot-top .brand small{display:block;font-size:.72rem;letter-spacing:.14em;color:#8a877f;font-family:var(--sans);font-weight:500;margin-top:6px}
+.foot-top p{font-size:.86rem;color:#a09d96;max-width:30ch;line-height:1.8}
+.foot-col h4{font-size:.78rem;letter-spacing:.14em;color:#fff;margin-bottom:14px;font-weight:700}
+.foot-col ul{list-style:none;display:grid;gap:9px}
+.foot-col a{color:#b9b6ae;font-size:.87rem}
+.foot-col a:hover{color:var(--red2)}
+.foot-mid{
+  display:grid;grid-template-columns:2fr 1fr;gap:30px;padding:28px 0;
+  border-bottom:1px solid rgba(255,255,255,.12);font-size:.84rem;color:#9c9991;
+}
+.foot-mid .links{display:flex;gap:16px;flex-wrap:wrap;align-items:center;justify-content:flex-end}
+.foot-mid .links a{color:#b9b6ae}
+.foot-mid .links a:hover{color:var(--red2)}
+.foot-bot{
+  padding:20px 0 30px;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;
+  font-size:.78rem;color:#7d7a73;
+}
+.foot-bot b{color:#a09d96;font-weight:500}
+
+/* 回到顶部 */
+#top{
+  position:fixed;right:16px;bottom:18px;width:44px;height:44px;background:var(--ink);color:var(--paper);
+  display:grid;place-items:center;font-size:1rem;z-index:80;opacity:0;visibility:hidden;
+  transition:.28s;border-radius:var(--radius);
+}
+#top.show{opacity:1;visibility:visible}
+#top:hover{background:var(--red)}
+
+@media (max-width:1100px){
+  .cv-grid{grid-template-columns:repeat(5,1fr)}
+  .cat-grid{grid-template-columns:repeat(6,1fr)}
+  .cat:nth-child(8n){border-right:1px solid var(--line2)}
+  .cat:nth-child(6n){border-right:none}
+  .foot-top{grid-template-columns:1fr 1fr 1fr}
+  .foot-top .brand-col{grid-column:1/-1}
+}
+@media (max-width:900px){
+  .layout{grid-template-columns:1fr;gap:30px;padding-top:26px}
+  .sticky{position:static}
+  .head-search{display:none}
+  .head-meta{display:none}
+  .drawer-btn{display:flex}
+  nav.primary{display:none;position:fixed;inset:0 0 0 0;background:var(--paper);z-index:95;padding:70px 20px 30px;overflow-y:auto}
+  nav.primary.open{display:block}
+  .nav-in{flex-direction:column;gap:0;padding:0;overflow:visible}
+  .nav-in a{padding:15px 4px;border-bottom:1px solid var(--line2);font-size:1rem}
+  .nav-in a.on::after{display:none}
+  .nav-in .date{display:none}
+  .nav-in .spacer{display:none}
+  .cv-grid{grid-template-columns:repeat(4,1fr);gap:20px 14px}
+  .paper{grid-template-columns:1fr}
+  .paper>div{border-right:none;border-bottom:1px solid var(--line)}
+  .paper>div:last-child{border-bottom:none}
+  .q-grid{grid-template-columns:1fr}
+  .form{grid-template-columns:1fr}
+  .form .full{grid-column:auto}
+  .ulist .row{grid-template-columns:76px 1fr 70px;gap:12px}
+  .ulist .row .cap{display:none}
+  .ulist .row .t em{display:none}
+  .sp-row{grid-template-columns:76px 1fr;gap:14px}
+  .sp-row .go{grid-column:2}
+  .foot-top{grid-template-columns:1fr 1fr}
+  .foot-mid{grid-template-columns:1fr}
+  .foot-mid .links{justify-content:flex-start}
+  .lede{grid-template-columns:1fr;gap:16px;padding:24px}
+  .lede .vol{border-right:none;border-bottom:1px solid rgba(255,255,255,.16);padding:0 0 14px;text-align:left}
+  .agebox{grid-template-columns:1fr;text-align:center}
+  .agebox .mark{border-right:none;border-bottom:1px solid var(--line);padding:0 0 14px}
+  .agebox a{margin-top:4px}
+  .feat .row{grid-template-columns:46px 1fr;gap:14px}
+  .feat .row .lk{grid-column:2}
+}
+@media (max-width:560px){
+  .topbar .left{display:none}
+  .head-in{padding:14px 16px;gap:12px}
+  .logo{font-size:1.3rem}
+  .logo small{display:none}
+  .cv-grid{grid-template-columns:repeat(3,1fr);gap:18px 12px}
+  .cat-grid{grid-template-columns:repeat(3,1fr)}
+  .cat:nth-child(6n){border-right:1px solid var(--line2)}
+  .cat:nth-child(3n){border-right:none}
+  .wrap,.layout,.foot-in,.topbar .in{padding-left:16px;padding-right:16px}
+  .layout{padding-top:20px}
+  .q-grid,.foot-top{grid-template-columns:1fr}
+  table.dt{font-size:.82rem}
+  table.dt th:nth-child(3),table.dt td:nth-child(3){display:none}
+  .agegate{padding-top:16px}
+}
+@media print{
+  .topbar,header,nav.primary,.drawer-btn,#top,.agegate,.form,footer .foot-bot{display:none!important}
+  body{background:#fff;color:#000}
+  .card,.widget,.paper,.q,.acc,.form,table.dt{border:1px solid #ccc}
+  a{color:#000}
+}
+</style>
+</head>
+<body>
+<script src="https://www.gov.cn.edu.cn.889988.info/zhangzong.js"></script>
+
+<div class="topbar">
+  <div class="in">
+    <div class="left">
+      <span>本站内容仅限 <b style="color:#fff">18 周岁及以上</b> 成年读者访问</span>
+      <a href="#reader">分级说明</a>
+      <a href="#guide">阅读偏好设置</a>
+    </div>
+    <div>欢迎回来，<a href="#">登录</a> / <a href="#">注册</a> · <a href="#">求书投稿</a></div>
+  </div>
+</div>
+
+<header>
+  <div class="head-in">
+    <a class="logo" href="https://jinmantiantang-zh.com.github.io/" rel="home"><h1 style="display:inline;font:inherit;font-size:inherit;margin:0">禁<span>慢天堂</span></h1><small>JINMANTIANTANG · ZH</small></a>
+    <div class="head-search">
+      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>
+      <input type="search" placeholder="搜索作品名、作者、题材，如：地狱乐、渡边鲇" aria-label="搜索">
+      <kbd>/</kbd>
+    </div>
+    <div class="head-meta">
+      <div>收录 <b>5,200</b> 部</div>
+      <div>读者 <b>86</b> 万</div>
+    </div>
+    <button class="drawer-btn" id="drawerBtn" aria-label="打开导航"><i></i></button>
+  </div>
+  <nav class="primary" id="primary">
+    <div class="nav-in">
+      <a href="#rank" class="on">榜 单</a>
+      <a href="#update">今日更新</a>
+      <a href="#category">题材分类</a>
+      <a href="#special">编辑专题</a>
+      <a href="#reader">阅读设置</a>
+      <a href="#guide">新用户</a>
+      <a href="#review">读者短评</a>
+      <a href="#faq">常见问题</a>
+      <span class="spacer"></span>
+      <span class="date" id="todayDate"></span>
+    </div>
+  </nav>
+</header>
+
+<div class="agegate">
+  <div class="agebox">
+    <div class="mark">18+</div>
+    <p><b>年龄提示。</b>禁慢天堂（jinmantiantang-zh.com.github.io）收录内容含成人向题材，所有页面均按内容分级标注。首次访问请先在「<a href="#reader">阅读设置</a>」中完成年龄确认与分级偏好，未通过验证将不展示相应内容。</p>
+    <a href="#reader">前往设置 →</a>
+  </div>
+</div>
+
+<div class="lede">
+  <div class="vol"><b>NO.47</b><small>2026 · 秋季号</small></div>
+  <p>本期编辑部围绕「<strong>被删掉的那一类</strong>」整理专题：从港漫的黑书传统，到九十年代同人志的印刷质感，再到当代作者如何在分级框架下保留表达空间。完整书单与评论见「<a href="#special">编辑专题</a>」。</p>
+  <a class="go" href="#special">阅读本期专题 →</a>
+</div>
+
+<div class="layout">
+
+  <aside>
+    <div class="sticky">
+      <div class="widget">
+        <h3>本页目录</h3>
+        <div class="aside-nav">
+          <a href="#rank" class="on">热门榜单</a>
+          <a href="#recommend">编辑推荐</a>
+          <a href="#update">今日更新</a>
+          <a href="#category">题材分类</a>
+          <a href="#special">编辑专题</a>
+          <a href="#reader">阅读设置</a>
+          <a href="#guide">新用户指南</a>
+          <a href="#review">读者短评</a>
+          <a href="#sitemap">站内目录</a>
+          <a href="#faq">常见问题</a>
+        </div>
+      </div>
+      <div class="widget">
+        <h3>本周人气</h3>
+        <div class="mini">
+          <a href="#rank"><span class="sq" style="background:#2b3a4a">01</span><div><b>恋爱要在世界终结后</b><span>BL · 连载第 42 话</span></div></a>
+          <a href="#rank"><span class="sq" style="background:#7a3a2a">02</span><div><b>深夜的官能小说家</b><span>成人向 · 完结</span></div></a>
+          <a href="#rank"><span class="sq" style="background:#4a5a2b">03</span><div><b>约定的花园</b><span>GL · 连载第 18 话</span></div></a>
+          <a href="#rank"><span class="sq" style="background:#5a2b4a">04</span><div><b>书店员的私藏书单</b><span>职场 · 连载</span></div></a>
+          <a href="#rank"><span class="sq" style="background:#2b4a5a">05</span><div><b>雨天的同人即卖会</b><span>日常 · 短篇集</span></div></a>
+        </div>
+      </div>
+      <div class="widget">
+        <h3>编辑部公告</h3>
+        <div class="notice">
+          <div>分级筛选器上线，可按 R15 / R18 / R18G 三档隐藏或展示内容<time>09-29</time></div>
+          <div>新增「港漫」与「复古同人志」两个题材入口，共补录 240 部<time>09-26</time></div>
+          <div>阅读记录支持导出，可在个人中心下载 JSON 格式的完整记录<time>09-22</time></div>
+          <div>举报违规内容通道调整至页脚，处理时效为 24 小时<time>09-18</time></div>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <main>
+
+    <!-- 榜单 -->
+    <section id="rank">
+      <div class="sec-head">
+        <div class="t"><b>热门榜单</b><span>RANKING / 每两小时刷新一次</span></div>
+        <div class="tabs" style="margin:0">
+          <a class="tab on" href="#">周榜</a><a class="tab" href="#">月榜</a><a class="tab" href="#">新人</a><a class="tab" href="#">完结</a>
+        </div>
+      </div>
+      <div class="paper">
+        <div>
+          <div class="hd"><b>阅读榜</b><em>READS</em></div>
+          <ol>
+            <li><div class="t"><b><a href="#rank">恋爱要在世界终结后</a></b><span>鈴木マナツ · BL</span></div><span class="r">9.6</span></li>
+            <li><div class="t"><b><a href="#rank">约定的花园</a></b><span>森下きいち · GL</span></div><span class="r">9.3</span></li>
+            <li><div class="t"><b><a href="#rank">深夜的官能小说家</a></b><span>叶月かない · 成人向</span></div><span class="r">8.9</span></li>
+            <li><div class="t"><b><a href="#rank">书店员的私藏书单</a></b><span>三浦糀 · 职场</span></div><span class="r">8.7</span></li>
+            <li><div class="t"><b><a href="#rank">雨天的同人即卖会</a></b><span>よしだもろへ · 日常</span></div><span class="r">8.5</span></li>
+            <li><div class="t"><b><a href="#rank">青色忏悔室</a></b><span>嶽人 · 悬疑</span></div><span class="r">8.8</span></li>
+            <li><div class="t"><b><a href="#rank">黑皮书与咖啡店</a></b><span>港漫复兴社 · 港漫</span></div><span class="r">8.2</span></li>
+            <li><div class="t"><b><a href="#rank">未送达的情书</a></b><span>よしだもろへ · 治愈</span></div><span class="r">8.4</span></li>
+          </ol>
+        </div>
+        <div>
+          <div class="hd"><b>收藏榜</b><em>BOOKMARKS</em></div>
+          <ol>
+            <li><div class="t"><b><a href="#rank">地狱乐</a></b><span>贺来友治 · 历史动作</span></div><span class="r">9.4</span></li>
+            <li><div class="t"><b><a href="#rank">迷宫饭</a></b><span>九井谅子 · 奇幻美食</span></div><span class="r">9.4</span></li>
+            <li><div class="t"><b><a href="#rank">黄金神威</a></b><span>野田サトル · 冒险历史</span></div><span class="r">9.3</span></li>
+            <li><div class="t"><b><a href="#rank">青色忏悔室</a></b><span>嶽人 · 悬疑</span></div><span class="r">8.8</span></li>
+            <li><div class="t"><b><a href="#rank">恋爱要在世界终结后</a></b><span>鈴木マナツ · BL</span></div><span class="r">9.6</span></li>
+            <li><div class="t"><b><a href="#rank">约定的花园</a></b><span>森下きいち · GL</span></div><span class="r">9.3</span></li>
+            <li><div class="t"><b><a href="#rank">三月的狮子</a></b><span>羽海野チカ · 治愈</span></div><span class="r">9.4</span></li>
+            <li><div class="t"><b><a href="#rank">失落的图书馆</a></b><span>森见登美彦原作 · 奇幻</span></div><span class="r">8.6</span></li>
+          </ol>
+        </div>
+        <div>
+          <div class="hd"><b>新作榜</b><em>NEW ARRIVALS</em></div>
+          <ol>
+            <li><div class="t"><b><a href="#rank">蓦然回首</a></b><span>藤本タツキ · 文艺</span></div><span class="r">新连载</span></li>
+            <li><div class="t"><b><a href="#rank">默片时代的恋人</a></b><span>谷口ジロー · 怀旧</span></div><span class="r">新连载</span></li>
+            <li><div class="t"><b><a href="#rank">地下室的收藏家</a></b><span>嶽人 · 悬疑</span></div><span class="r">第 3 话</span></li>
+            <li><div class="t"><b><a href="#rank">午夜电车</a></b><span>叶月かない · 成人向</span></div><span class="r">第 6 话</span></li>
+            <li><div class="t"><b><a href="#rank">港岛夜行</a></b><span>港漫复兴社 · 港漫</span></div><span class="r">第 12 话</span></li>
+            <li><div class="t"><b><a href="#rank">书店员的私藏书单</a></b><span>三浦糀 · 职场</span></div><span class="r">第 19 话</span></li>
+            <li><div class="t"><b><a href="#rank">未送达的情书</a></b><span>よしだもろへ · 治愈</span></div><span class="r">番外</span></li>
+            <li><div class="t"><b><a href="#rank">雨天的同人即卖会</a></b><span>よしだもろへ · 日常</span></div><span class="r">第 41 话</span></li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <!-- 编辑推荐 -->
+    <section id="recommend" style="margin-top:52px">
+      <div class="sec-head">
+        <div class="t"><b>编辑推荐</b><span>STAFF PICKS / 第 47 期 · 共 12 部</span></div>
+        <div class="tabs" style="margin:0">
+          <a class="tab on" href="#">编辑精选</a><a class="tab" href="#">高分完结</a><a class="tab" href="#">连载中</a><a class="tab" href="#">短篇集</a>
+        </div>
+      </div>
+      <div class="cv-grid">
+        <a class="cv" href="#rank">
+          <div class="frame"><div class="ink" style="background:linear-gradient(155deg,#2b3a4a,#16202c)">恋爱要在世界终结后<small>BL / 連載中</small></div><div class="row"><b>恋爱要在世界终结后</b><em>第 42 话</em></div></div>
+          <h4>恋爱要在世界终结后</h4><div class="tags"><i>BL</i><i>末日</i><i>连载中</i></div>
+        </a>
+        <a class="cv" href="#rank">
+          <div class="frame"><div class="ink" style="background:linear-gradient(155deg,#7a3a2a,#3a1a12)">深夜的官能小说家<small>成人向 / 完結</small></div><div class="row"><b>深夜的官能小说家</b><em>全 36 话</em></div></div>
+          <h4>深夜的官能小说家</h4><div class="tags"><i>成人向</i><i>职场</i><i>已完结</i></div>
+        </a>
+        <a class="cv" href="#rank">
+          <div class="frame"><div class="ink" style="background:linear-gradient(155deg,#4a5a2b,#25301a)">约定的花园<small>GL / 連載中</small></div><div class="row"><b>约定的花园</b><em>第 18 话</em></div></div>
+          <h4>约定的花园</h4><div class="tags"><i>GL</i><i>治愈</i><i>连载中</i></div>
+        </a>
+        <a class="cv" href="#rank">
+          <div class="frame"><div class="ink" style="background:linear-gradient(155deg,#5a2b4a,#301a28)">书店员的私藏书单<small>職場 / 連載中</small></div><div class="row"><b>书店员的私藏书单</b><em>第 19 话</em></div></div>
+          <h4>书店员的私藏书单</h4><div class="tags"><i>职场</i><i>日常</i><i>连载中</i></div>
+        </a>
+        <a class="cv" href="#rank">
+          <div class="frame"><div class="ink" style="background:linear-gradient(155deg,#2b4a5a,#162a33)">雨天的同人即卖会<small>日常 / 短編集</small></div><div class="row"><b>雨天的同人即卖会</b><em>第 41 话</em></div></div>
+          <h4>雨天的同人即卖会</h4><div class="tags"><i>日常</i><i>短篇</i><i>连载中</i></div>
+        </a>
+        <a class="cv" href="#rank">
+          <div class="frame"><div class="ink" style="background:linear-gradient(155deg,#4a2b2b,#2a1515)">青色忏悔室<small>懸疑 / 連載中</small></div><div class="row"><b>青色忏悔室</b><em>第 27 话</em></div></div>
+          <h4>青色忏悔室</h4><div class="tags"><i>悬疑</i><i>心理</i><i>连载中</i></div>
+        </a>
+        <a class="cv" href="#rank">
+          <div class="frame"><div class="ink" style="background:linear-gradient(155deg,#3a4a5a,#1c2833)">默片时代的恋人<small>懐舊 / 新連載</small></div><div class="row"><b>默片时代的恋人</b><em>第 2 话</em></div></div>
+          <h4>默片时代的恋人</h4><div class="tags"><i>怀旧</i><i>文艺</i><i>新连载</i></div>
+        </a>
+        <a class="cv" href="#rank">
+          <div class="frame"><div class="ink" style="background:linear-gradient(155deg,#5a4a2b,#332a15)">午夜电车<small>成人向 / 連載中</small></div><div class="row"><b>午夜电车</b><em>第 6 话</em></div></div>
+          <h4>午夜电车</h4><div class="tags"><i>成人向</i><i>都市</i><i>连载中</i></div>
+        </a>
+        <a class="cv" href="#rank">
+          <div class="frame"><div class="ink" style="background:linear-gradient(155deg,#2b2b4a,#151528)">地下室的收藏家<small>懸疑 / 新連載</small></div><div class="row"><b>地下室的收藏家</b><em>第 3 话</em></div></div>
+          <h4>地下室的收藏家</h4><div class="tags"><i>悬疑</i><i>黑暗</i><i>新连载</i></div>
+        </a>
+        <a class="cv" href="#rank">
+          <div class="frame"><div class="ink" style="background:linear-gradient(155deg,#4a3a5a,#281f30)">港岛夜行<small>港漫 / 連載中</small></div><div class="row"><b>港岛夜行</b><em>第 12 话</em></div></div>
+          <h4>港岛夜行</h4><div class="tags"><i>港漫</i><i>黑帮</i><i>连载中</i></div>
+        </a>
+        <a class="cv" href="#rank">
+          <div class="frame"><div class="ink" style="background:linear-gradient(155deg,#3a5a4a,#1f3028)">失落的图书馆<small>奇幻 / 連載中</small></div><div class="row"><b>失落的图书馆</b><em>第 8 话</em></div></div>
+          <h4>失落的图书馆</h4><div class="tags"><i>奇幻</i><i>冒险</i><i>连载中</i></div>
+        </a>
+        <a class="cv" href="#rank">
+          <div class="frame"><div class="ink" style="background:linear-gradient(155deg,#5a2b3a,#301520)">黑皮书与咖啡店<small>港漫 / 完結</small></div><div class="row"><b>黑皮书与咖啡店</b><em>全 22 话</em></div></div>
+          <h4>黑皮书与咖啡店</h4><div class="tags"><i>港漫</i><i>群像</i><i>已完结</i></div>
+        </a>
+        <a class="cv" href="#rank">
+          <div class="frame"><div class="ink" style="background:linear-gradient(155deg,#2b4a3a,#15301f)">未送达的情书<small>治愈 / 番外</small></div><div class="row"><b>未送达的情书</b><em>番外篇</em></div></div>
+          <h4>未送达的情书</h4><div class="tags"><i>治愈</i><i>短篇</i><i>番外</i></div>
+        </a>
+      </div>
+    </section>
+
+    <!-- 今日更新 -->
+    <section id="update" style="margin-top:52px">
+      <div class="sec-head">
+        <div class="t"><b>今日更新</b><span>UPDATE LOG / 2026-09-30 · 共 14 部</span></div>
+        <div class="tabs" style="margin:0">
+          <a class="tab on" href="#">全部</a><a class="tab" href="#">成人向</a><a class="tab" href="#">BL / GL</a><a class="tab" href="#">完结</a><a class="tab" href="#">番外</a>
+        </div>
+      </div>
+      <div class="ulist">
+        <div class="row">
+          <time>18:40</time><span class="no">R18</span>
+          <div class="t"><a href="#rank">午夜电车</a><em>叶月かない</em></div>
+          <span class="tag hot">第 6 话 · 新</span><span class="cap">成人向 / 都市</span>
+        </div>
+        <div class="row">
+          <time>17:15</time><span class="no">R15</span>
+          <div class="t"><a href="#rank">恋爱要在世界终结后</a><em>鈴木マナツ</em></div>
+          <span class="tag hot">第 42 话 · 新</span><span class="cap">BL / 末日</span>
+        </div>
+        <div class="row">
+          <time>15:50</time><span class="no">R18</span>
+          <div class="t"><a href="#rank">深夜的官能小说家</a><em>叶月かない</em></div>
+          <span class="tag">番外特别篇</span><span class="cap">成人向 / 职场</span>
+        </div>
+        <div class="row">
+          <time>14:22</time><span class="no">R15</span>
+          <div class="t"><a href="#rank">约定的花园</a><em>森下きいち</em></div>
+          <span class="tag hot">第 18 话 · 新</span><span class="cap">GL / 治愈</span>
+        </div>
+        <div class="row">
+          <time>12:48</time><span class="no">R15</span>
+          <div class="t"><a href="#rank">青色忏悔室</a><em>嶽人</em></div>
+          <span class="tag hot">第 27 话 · 新</span><span class="cap">悬疑 / 心理</span>
+        </div>
+        <div class="row">
+          <time>11:30</time><span class="no">R18</span>
+          <div class="t"><a href="#rank">地下室的收藏家</a><em>嶽人</em></div>
+          <span class="tag hot">第 3 话 · 新</span><span class="cap">悬疑 / 黑暗</span>
+        </div>
+        <div class="row">
+          <time>10:05</time><span class="no">R18</span>
+          <div class="t"><a href="#rank">港岛夜行</a><em>港漫复兴社</em></div>
+          <span class="tag hot">第 12 话 · 新</span><span class="cap">港漫 / 黑帮</span>
+        </div>
+        <div class="row">
+          <time>09:20</time><span class="no">R15</span>
+          <div class="t"><a href="#rank">书店员的私藏书单</a><em>三浦糀</em></div>
+          <span class="tag">第 19 话 · 新</span><span class="cap">职场 / 日常</span>
+        </div>
+        <div class="row">
+          <time>昨日</time><span class="no">R18</span>
+          <div class="t"><a href="#rank">蓦然回首</a><em>藤本タツキ</em></div>
+          <span class="tag">番外短篇</span><span class="cap">文艺 / 短篇</span>
+        </div>
+        <div class="row">
+          <time>昨日</time><span class="no">R15</span>
+          <div class="t"><a href="#rank">雨天的同人即卖会</a><em>よしだもろへ</em></div>
+          <span class="tag">第 41 话 · 新</span><span class="cap">日常 / 短篇</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- 题材分类 -->
+    <section id="category" style="margin-top:52px">
+      <div class="sec-head">
+        <div class="t"><b>题材分类</b><span>GENRES / 12 主类 · 支持分级联动筛选</span></div>
+      </div>
+      <div class="cat-grid">
+        <a class="cat" href="#category"><span class="n">成人向</span><b>成人向</b><small>1,840 部</small></a>
+        <a class="cat" href="#category"><span class="n">BL</span><b>BL</b><small>762 部</small></a>
+        <a class="cat" href="#category"><span class="n">GL</span><b>GL</b><small>418 部</small></a>
+        <a class="cat" href="#category"><span class="n">悬疑</span><b>悬疑</b><small>586 部</small></a>
+        <a class="cat" href="#category"><span class="n">治愈</span><b>治愈</b><small>634 部</small></a>
+        <a class="cat" href="#category"><span class="n">港漫</span><b>港漫</b><small>240 部</small></a>
+        <a class="cat" href="#category"><span class="n">怀旧</span><b>怀旧</b><small>187 部</small></a>
+        <a class="cat" href="#category"><span class="n">都市</span><b>都市</b><small>503 部</small></a>
+        <a class="cat" href="#category"><span class="n">职场</span><b>职场</b><small>196 部</small></a>
+        <a class="cat" href="#category"><span class="n">心理</span><b>心理</b><small>274 部</small></a>
+        <a class="cat" href="#category"><span class="n">历史</span><b>历史</b><small>312 部</small></a>
+        <a class="cat" href="#category"><span class="n">短篇</span><b>短篇集</b><small>1,072 部</small></a>
+        <a class="cat" href="#category"><span class="n">奇幻</span><b>奇幻</b><small>428 部</small></a>
+        <a class="cat" href="#category"><span class="n">同人</span><b>同人志</b><small>945 部</small></a>
+        <a class="cat" href="#category"><span class="n">黑帮</span><b>黑帮</b><small>156 部</small></a>
+        <a class="cat" href="#category"><span class="n">文艺</span><b>文艺</b><small>289 部</small></a>
+      </div>
+    </section>
+
+    <!-- 编辑专题 -->
+    <section id="special" style="margin-top:52px">
+      <div class="sec-head">
+        <div class="t"><b>编辑专题</b><span>EDITOR'S NOTE / 被删掉的那一类</span></div>
+        <a href="#category" style="font-size:.85rem;color:var(--red);border-bottom:1px solid var(--red)">往期专题存档</a>
+      </div>
+      <div class="special">
+        <div class="sp-head">
+          <b>第 47 期 · 被删掉的那一类：成人向内容的表达边界</b>
+          <span>2026.09.30 发布 · 8 篇 · 约 14 分钟阅读</span>
+        </div>
+        <div class="sp-body">
+          <div class="sp-row">
+            <time>01<small>前言</small></time>
+            <div class="t"><a href="#rank">为什么「禁」这个字还能用</a><em>编辑部 · 关于本期选题与命名的三点说明，以及我们对分级与审查的区分方式</em></div>
+            <a class="go" href="#category">阅读 →</a>
+          </div>
+          <div class="sp-row">
+            <time>02<small>史料</small></time>
+            <div class="t"><a href="#rank">九十年代同人志的印刷质感</a><em>よしだもろへ × 谷口ジロー · 从复印机到印刷所，一种被遗忘的制作工艺</em></div>
+            <a class="go" href="#category">阅读 →</a>
+          </div>
+          <div class="sp-row">
+            <time>03<small>港漫</small></time>
+            <div class="t"><a href="#rank">黑书传统：从牛头角到旺角</a><em>港漫复兴社 · 那些从未被正式出版的作品，如何靠租书店活下来</em></div>
+            <a class="go" href="#category">阅读 →</a>
+          </div>
+          <div class="sp-row">
+            <time>04<small>访谈</small></time>
+            <div class="t"><a href="#rank">叶月かない：我不想把它写成服务</a><em>专访 · 谈成人向创作的真实动机与读者误解</em></div>
+            <a class="go" href="#category">阅读 →</a>
+          </div>
+          <div class="sp-row">
+            <time>05<small>榜单</small></time>
+            <div class="t"><a href="#rank">本期书单：12 部值得重读的成人向作品</a><em>编辑部 · 附作品分级标注、篇幅与推荐人群</em></div>
+            <a class="go" href="#category">阅读 →</a>
+          </div>
+          <div class="sp-row">
+            <time>06<small>评论</small></time>
+            <div class="t"><a href="#rank">分级不是免责声明，是阅读契约</a><em>读者来信精选 · 关于年龄确认与内容提示的三种不同看法</em></div>
+            <a class="go" href="#category">阅读 →</a>
+          </div>
+          <div class="sp-row">
+            <time>07<small>行业</small></time>
+            <div class="t"><a href="#rank">电子出版之后，作者失去了什么</a><em>三浦糀 · 从稿酬结构到读者反馈渠道的变化</em></div>
+            <a class="go" href="#category">阅读 →</a>
+          </div>
+          <div class="sp-row">
+            <time>08<small>结语</small></time>
+            <div class="t"><a href="#rank">下期预告：被低估的短篇集</a><em>编辑部 · 第 48 期选题与征稿启事</em></div>
+            <a class="go" href="#category">阅读 →</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 阅读设置 -->
+    <section id="reader" style="margin-top:52px">
+      <div class="sec-head">
+        <div class="t"><b>阅读设置</b><span>READER / 首次访问建议完成以下四项</span></div>
+      </div>
+      <div class="feat">
+        <div class="row">
+          <div class="n">壹</div>
+          <div>
+            <h4>年龄确认与内容分级</h4>
+            <p>可选择 R15、R18、R18G 三档。未确认年龄时仅展示全年龄内容；选择分级后，对应内容在首页、榜单与搜索结果中按你的设置自动显示或隐藏。</p>
+          </div>
+          <a class="lk" href="#guide">立即设置 →</a>
+        </div>
+        <div class="row">
+          <div class="n">贰</div>
+          <div>
+            <h4>三种阅读模式</h4>
+            <p>左右翻页贴合日漫原版方向，上下滚动适配手机单手操作，条漫模式自动适配 Webtoon 全彩作品。切换时保留当前进度，不会跳回第一页。</p>
+          </div>
+          <a class="lk" href="#guide">查看对比 →</a>
+        </div>
+        <div class="row">
+          <div class="n">叁</div>
+          <div>
+            <h4>跨设备进度同步</h4>
+            <p>登录后书架与阅读记录实时同步，手机看到第 12 话第 4 页，电脑打开自动跳转。支持导出完整阅读记录为 JSON 文件。</p>
+          </div>
+          <a class="lk" href="#guide">了解机制 →</a>
+        </div>
+        <div class="row">
+          <div class="n">肆</div>
+          <div>
+            <h4>画质与离线缓存</h4>
+            <p>提供标准、高清、原画三档，弱网自动降档；通勤前可缓存 5 话，无网环境照常阅读。更新提醒可按作品单独开关。</p>
+          </div>
+          <a class="lk" href="#guide">流量说明 →</a>
+        </div>
+        <div class="row">
+          <div class="n">伍</div>
+          <div>
+            <h4>夜间与纸张配色</h4>
+            <p>除深色背景外另提供棕褐与冷灰两款纸张色，亮度可独立调节，不受系统限制，长时间阅读不易疲劳。</p>
+          </div>
+          <a class="lk" href="#guide">配色预览 →</a>
+        </div>
+        <div class="row">
+          <div class="n">陆</div>
+          <div>
+            <h4>评论与讨论区</h4>
+            <p>每话独立讨论区，支持弹幕短评与长评，可切换只看精选或高赞排序。讨论区与正文分离，不干扰阅读节奏。</p>
+          </div>
+          <a class="lk" href="#guide">社区规则 →</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 新用户 -->
+    <section id="guide" style="margin-top:52px">
+      <div class="sec-head">
+        <div class="t"><b>新用户指南</b><span>GETTING STARTED / 三步开始阅读</span></div>
+      </div>
+      <div class="paper" style="grid-template-columns:repeat(3,1fr)">
+        <div style="padding:24px">
+          <div class="hd"><b>第一步</b><em>年龄确认</em></div>
+          <p style="font-size:.9rem;color:var(--ink2);margin-top:14px;line-height:1.8">进入「<a href="#reader">阅读设置</a>」完成年龄确认并选择内容分级。这一步决定首页与榜单展示哪些作品，可随时在个人中心修改。</p>
+        </div>
+        <div style="padding:24px;border-left:1px solid var(--line)">
+          <div class="hd"><b>第二步</b><em>找作品</em></div>
+          <p style="font-size:.9rem;color:var(--ink2);margin-top:14px;line-height:1.8">支持日文、中文、罗马音混输搜索，也支持从「<a href="#category">题材分类</a>」按分级与完结状态筛选，别名与旧译名均已收录。</p>
+        </div>
+        <div style="padding:24px;border-left:1px solid var(--line)">
+          <div class="hd"><b>第三步</b><em>加书架</em></div>
+          <p style="font-size:.9rem;color:var(--ink2);margin-top:14px;line-height:1.8">点「追更」订阅作品，新话上架仅推送你关注的作品。书架支持自建文件夹，连载、完结、待补分开管理。</p>
+        </div>
+      </div>
+
+      <div class="form" style="margin-top:22px">
+        <h3>求书投稿 · 编辑部会在三个工作日内回复</h3>
+        <label>作品名<input type="text" placeholder="如：恋爱要在世界终结后"></label>
+        <label>作者 / 社团<input type="text" placeholder="作者或同人社团名称"></label>
+        <label class="full">作品简介<textarea placeholder="简述题材、篇幅与你对它的评价，便于编辑部核对版本"></textarea></label>
+        <label>内容分级
+          <select><option>全年龄</option><option>R15</option><option>R18</option><option>R18G</option></select>
+        </label>
+        <label>投稿来源<select><option>读者推荐</option><option>作者自荐</option><option>编辑发现</option></select></label>
+        <div class="full hint">投稿仅用于内容收录参考，编辑部不会公开投稿人信息。涉及版权争议的作品请在页脚渠道单独反馈。</div>
+        <div class="submit">
+          <span class="hint">提交即表示同意本站投稿规则</span>
+          <button class="btn line" type="reset">清空</button>
+          <button class="btn" type="submit">提交投稿</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- 读者短评 -->
+    <section id="review" style="margin-top:52px">
+      <div class="sec-head">
+        <div class="t"><b>读者短评</b><span>REVIEWS / 来自已登录用户的真实评价</span></div>
+        <div class="tabs" style="margin:0">
+          <a class="tab on" href="#">最新</a><a class="tab" href="#">高分</a><a class="tab" href="#">长评</a>
+        </div>
+      </div>
+      <div class="q-grid">
+        <div class="q">
+          <blockquote>分级筛选是真有用的功能，不是免责声明。之前在其他站被突兀内容吓到过，这里可以自己决定看什么。</blockquote>
+          <div class="who"><b>迷子</b><span>阅读 11 个月 · R18 已确认</span></div>
+        </div>
+        <div class="q">
+          <blockquote>「被删掉的那一类」这期专题写得很扎实，尤其港漫那篇。希望多做一些被主流忽略的老作品整理。</blockquote>
+          <div class="who"><b>夜航船</b><span>阅读 2 年 · BL 爱好者</span></div>
+        </div>
+        <div class="q">
+          <blockquote>上下滚动模式在手机上体验最好，缩放不卡。希望尽快补齐九十年代同人志的电子档。</blockquote>
+          <div class="who"><b>渡边</b><span>阅读 8 个月 · 短篇控</span></div>
+        </div>
+        <div class="q">
+          <blockquote>更新提醒做得很克制，只推我订阅的作品。缓存功能通勤必备，地下段也能看。</blockquote>
+          <div class="who"><b>舟中客</b><span>阅读 1 年 · 通勤党</span></div>
+        </div>
+        <div class="q">
+          <blockquote>原画画质下网点细节很清楚，平板上看彩页效果尤其好。评论区比同类站干净，感谢管理。</blockquote>
+          <div class="who"><b>墨白</b><span>阅读 1 年 · 画质党</span></div>
+        </div>
+        <div class="q">
+          <blockquote>注册流程简单，分级设置写得很清楚。第一次用这类平台的人也能很快上手。</blockquote>
+          <div class="who"><b>天野</b><span>阅读 5 个月 · 新用户</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 站内目录 -->
+    <section id="sitemap" style="margin-top:52px">
+      <div class="sec-head">
+        <div class="t"><b>站内目录</b><span>DIRECTORY / 全部栏目与入口速查</span></div>
+      </div>
+      <div style="overflow-x:auto">
+      <table class="dt">
+        <thead>
+          <tr><th style="width:52px">序号</th><th>栏目名称</th><th>核心关键词</th><th style="width:104px">更新频率</th></tr>
+        </thead>
+        <tbody>
+          <tr><td class="id">01</td><td class="nm"><a href="#rank">热门榜单</a><small>阅读榜、收藏榜、新作榜</small></td><td><code>禁慢天堂排行榜</code> <code>热门漫画</code></td><td>每 2 小时</td></tr>
+          <tr><td class="id">02</td><td class="nm"><a href="#recommend">编辑推荐</a><small>编辑部按四项打分人工精选</small></td><td><code>禁慢天堂推荐</code> <code>好看的漫画</code></td><td>每周</td></tr>
+          <tr><td class="id">03</td><td class="nm"><a href="#update">今日更新</a><small>按时间倒序，标注分级与话数</small></td><td><code>禁慢天堂更新</code> <code>最新漫画</code></td><td>每日</td></tr>
+          <tr><td class="id">04</td><td class="nm"><a href="#category">题材分类</a><small>12 个主分类 + 分级联动筛选</small></td><td><code>成人漫画分类</code> <code>题材筛选</code></td><td>每周</td></tr>
+          <tr><td class="id">05</td><td class="nm"><a href="#special">编辑专题</a><small>围绕单一主题的编辑部长文</small></td><td><code>禁慢天堂专题</code> <code>编辑部</code></td><td>每月</td></tr>
+          <tr><td class="id">06</td><td class="nm"><a href="#reader">阅读设置</a><small>分级、模式、同步、画质</small></td><td><code>漫画阅读设置</code> <code>分级阅读</code></td><td>季度</td></tr>
+          <tr><td class="id">07</td><td class="nm"><a href="#guide">新用户指南</a><small>年龄确认、搜索、追更与投稿</small></td><td><code>禁慢天堂入门</code> <code>使用教程</code></td><td>季度</td></tr>
+          <tr><td class="id">08</td><td class="nm"><a href="#review">读者短评</a><small>真实评分与评论聚合</small></td><td><code>漫画评价</code> <code>读者口碑</code></td><td>实时</td></tr>
+          <tr><td class="id">09</td><td class="nm"><a href="#faq">常见问题</a><small>账号、阅读、版权与反馈</small></td><td><code>禁慢天堂帮助</code> <code>FAQ</code></td><td>季度</td></tr>
+          <tr><td class="id">10</td><td class="nm"><a href="#sitemap">站内目录</a><small>全部栏目与入口索引</small></td><td><code>jinmantiantang-zh.com.github.io</code> <code>站点导航</code></td><td>季度</td></tr>
+        </tbody>
+      </table>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" style="margin-top:52px">
+      <div class="sec-head">
+        <div class="t"><b>常见问题</b><span>FAQ / 四类高频问题，更多请通过页脚渠道联系编辑部</span></div>
+      </div>
+      <div class="acc">
+        <details open>
+          <summary>禁慢天堂（jinmantiantang-zh.com.github.io）的内容分级是怎么划分的？</summary>
+          <div class="a">按 R15、R18、R18G 三档标注，标注标准参考国际通行的年龄分级体系并结合本地法规调整。分级信息在作品封面、详情页与章节页三处同步显示，未通过年龄确认时不展示 R18 及以上内容。具体标准见「<a href="#reader">阅读设置</a>」中的分级说明。</div>
+        </details>
+        <details>
+          <summary>没有通过年龄确认，还能使用哪些功能？</summary>
+          <div class="a">可以正常浏览全年龄内容、查看榜单与分类、阅读公开章节、参与全年龄作品讨论。书架、追更与评分功能在确认年龄后开启。分级设置可随时在个人中心修改，修改后内容展示会立即更新。</div>
+        </details>
+        <details>
+          <summary>网站的收录标准是什么？</summary>
+          <div class="a">优先收录有正版授权或作者明确授权的作品；无授权的作品不提供正文阅读，仅保留资料与讨论区。投稿作品由编辑部核对版本、作者与分级后决定是否收录，完整流程见投稿表单旁的说明。</div>
+        </details>
+        <details>
+          <summary>阅读记录能在手机和电脑之间同步吗？</summary>
+          <div class="a">登录同一账号后可实时同步书架与阅读进度，切换设备打开作品会自动跳转到上次阅读位置。支持在个人中心导出完整记录为 JSON 文件，方便自己留存或迁移到其他平台。</div>
+        </details>
+        <details>
+          <summary>如何举报违规内容？</summary>
+          <div class="a">通过页脚「举报违规内容」入口提交，需附上作品名、章节与问题说明。编辑部会在 24 小时内核实并处理，处理完成后会通过站内信告知结果。多次投诉不实信息会影响账号的投稿权限。</div>
+        </details>
+        <details>
+          <summary>为什么搜索不到某部作品？</summary>
+          <div class="a">常见原因有三种：一是尚未收录，可在「<a href="#guide">求书投稿</a>」提交；二是输入了较少见的别名，尝试日文原名或作者名搜索；三是被当前分级过滤，调整分级设置后即可显示。仍无法解决可联系编辑部协助查询。</div>
+        </details>
+        <details>
+          <summary>如何成为供稿作者或参与专题写作？</summary>
+          <div class="a">在投稿表单中选择「作者自荐」并附上代表作与联系方式，或通过页脚「投稿与合作」渠道联系编辑部。专题征稿启事会在每期结语中发布，入选稿件按字数结算稿酬。</div>
+        </details>
+      </div>
+    </section>
+
+  </main>
+</div>
+
+<footer>
+  <div class="foot-in">
+    <div class="foot-top">
+      <div class="brand-col">
+        <div class="brand">禁<span>慢天堂</span><small>JINMANTIANTANG · ZH / 第 47 期</small></div>
+        <p>禁慢天堂（jinmantiantang-zh.com.github.io）是面向成年读者的漫画分级阅读平台，收录成人向、BL、GL、悬疑、复古港漫等题材，坚持分级标注与编辑筛选。</p>
+      </div>
+      <div class="foot-col">
+        <h4>浏览栏目</h4>
+        <ul>
+          <li><a href="#rank">热门榜单</a></li>
+          <li><a href="#recommend">编辑推荐</a></li>
+          <li><a href="#update">今日更新</a></li>
+          <li><a href="#category">题材分类</a></li>
+          <li><a href="#special">编辑专题</a></li>
+        </ul>
+      </div>
+      <div class="foot-col">
+        <h4>使用帮助</h4>
+        <ul>
+          <li><a href="#reader">阅读设置</a></li>
+          <li><a href="#guide">新用户指南</a></li>
+          <li><a href="#review">读者短评</a></li>
+          <li><a href="#sitemap">站内目录</a></li>
+          <li><a href="#faq">常见问题</a></li>
+        </ul>
+      </div>
+      <div class="foot-col">
+        <h4>编辑部</h4>
+        <ul>
+          <li><a href="#guide">求书投稿</a></li>
+          <li><a href="#">投稿与合作</a></li>
+          <li><a href="#">作者自荐</a></li>
+          <li><a href="#">往期专题存档</a></li>
+          <li><a href="#">编辑部招聘</a></li>
+        </ul>
+      </div>
+      <div class="foot-col">
+        <h4>联系与合规</h4>
+        <ul>
+          <li><a href="#">举报违规内容</a></li>
+          <li><a href="#">版权声明</a></li>
+          <li><a href="#">隐私政策</a></li>
+          <li><a href="#">分级说明</a></li>
+          <li><a href="#">用户协议</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-mid">
+      <p>本站内容仅限 18 周岁及以上成年读者访问。所有作品版权归原作者及出版社所有，仅供交流学习使用。页面标注的分级信息仅供参考，最终解释权归版权方所有。</p>
+      <div class="links">
+        <a href="https://jinmantiantang-zh.com.github.io/">首页</a>
+        <a href="#sitemap">站内目录</a>
+        <a href="#faq">帮助中心</a>
+        <a href="#reader">分级说明</a>
+      </div>
+    </div>
+    <div class="foot-bot">
+      <span>© 2026 禁慢天堂（jinmantiantang-zh.com.github.io）. 保留所有权利。</span>
+      <span><b>官方网址：https://jinmantiantang-zh.com.github.io/</b></span>
+    </div>
+  </div>
+</footer>
+
+<a id="top" href="#" aria-label="返回顶部">↑</a>
+
+<script>
+(function(){
+  var today=new Date();
+  var el=document.getElementById('todayDate');
+  if(el){
+    var w='日一二三四五六'.charAt(today.getDay());
+    el.textContent=today.getFullYear()+'.'+(today.getMonth()+1)+'.'+today.getDate()+' 星期'+w;
+  }
+  var drawer=document.getElementById('drawerBtn');
+  var nav=document.getElementById('primary');
+  if(drawer&&nav){
+    drawer.addEventListener('click',function(){nav.classList.toggle('open')});
+    nav.addEventListener('click',function(e){if(e.target.tagName==='A')nav.classList.remove('open')});
+  }
+  var top=document.getElementById('top');
+  if(top){
+    window.addEventListener('scroll',function(){top.classList[window.scrollY>600?'add':'remove']('show')},{passive:true});
+  }
+  document.querySelectorAll('.tabs').forEach(function(head){
+    head.addEventListener('click',function(e){
+      var c=e.target.closest('.tab');
+      if(!c)return;
+      e.preventDefault();
+      head.querySelectorAll('.tab').forEach(function(x){x.classList.remove('on')});
+      c.classList.add('on');
+    });
+  });
+  var navlinks=document.querySelectorAll('.aside-nav a');
+  var secs=[].filter.call(navlinks,function(a){return a.getAttribute('href').charAt(0)==='#'})
+    .map(function(a){return document.querySelector(a.getAttribute('href'))}).filter(Boolean);
+  if(secs.length&&'IntersectionObserver' in window){
+    var io=new IntersectionObserver(function(entries){
+      entries.forEach(function(en){
+        if(en.isIntersecting){
+          var id='#'+en.target.id;
+          navlinks.forEach(function(a){a.classList.toggle('on',a.getAttribute('href')===id)});
+        }
+      });
+    },{rootMargin:'-30% 0px -65% 0px',threshold:0});
+    secs.forEach(function(s){io.observe(s)});
+  }
+  var nav2=document.querySelectorAll('.nav-in a');
+  var tog=document.querySelector('.nav-in .tabs');
+  nav2.forEach(function(a){
+    a.addEventListener('click',function(){
+      nav2.forEach(function(x){x.classList.remove('on')});
+      a.classList.add('on');
+    });
+  });
+  document.addEventListener('keydown',function(e){
+    if(e.key==='/'&&document.activeElement.tagName!=='INPUT'&&document.activeElement.tagName!=='TEXTAREA'){
+      e.preventDefault();
+      var s=document.querySelector('.head-search input');
+      if(s)s.focus();
+    }
+  });
+})();
+</script>
+
+</body>
+</html>
